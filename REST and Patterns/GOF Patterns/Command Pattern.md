@@ -6,7 +6,7 @@ the **command pattern** is a [behavioral](https://en.wikipedia.org/wiki/Behavior
 
 The Command pattern can turn a specific method call into a stand-alone object. This change opens up a lot of interesting uses: you can pass commands as method arguments, can queue commands and replay them at later time, can implement do -undo operations etc.
 
-![[Pasted image 20251218164205.png]]
+![](attachments/Pasted%20image%2020251225190247.png)
 
 In the above [UML](https://en.wikipedia.org/wiki/Unified_Modeling_Language "https://en.wikipedia.org/wiki/Unified_Modeling_Language") [class diagram](https://en.wikipedia.org/wiki/Class_diagram "https://en.wikipedia.org/wiki/Class_diagram"), the `Invoker` class doesn't implement a request directly. Instead, `Invoker` refers to the `Command` interface to perform a request (`command.execute()`), which makes the `Invoker` independent of how the request is performed. The `Command1` class implements the `Command` interface by performing an action on a receiver (`receiver1.action1()`).
 

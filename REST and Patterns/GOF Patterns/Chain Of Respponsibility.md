@@ -9,7 +9,7 @@ The pattern frees an object from knowing which other object handles a request. A
 
 Since a request has no explicit receiver, there's no guarantee it'll be handled—the request can fall off the end of the chain without ever being handled.
 
-![[Pasted image 20251224234228.png]]
+![](attachments/Pasted%20image%2020251225190225.png)
 
 The **Handler** declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
 

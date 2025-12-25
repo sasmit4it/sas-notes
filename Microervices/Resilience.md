@@ -12,7 +12,7 @@ This is a shipping analogy, which basically means if water enters one part of th
 
 In microservices, this means one slow service should not affect other healthy services. Following is an example , where A is healthy service while B is slow.v
 
-![[Pasted image 20251225000507.png]]
+![](attachments/Pasted%20image%2020251225185740.png)
 
 
 When there are multiple concurrent requests to Service A, say 10, 5 of them are for endpoint _**/a/b**_ and 5 of them are for endpoint **/a**, there is a chance that Service A might use all its threads to work on the requests for _**/a/b**_ and block all the 5 threads. Even though the remaining requests are for _**/a**_ which does not have any other service dependency, Service A does not have free threads to work on the requests _**(resource exhaustion)**_! This behavior will affect overall performance of the application and might cause poor user experience. Service B slowness indirectly affects Service A performance as well.

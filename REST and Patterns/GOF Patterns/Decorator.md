@@ -18,7 +18,7 @@ Decorator use can be more efficient than subclassing, because an object's behavi
     
 - This allows chaining of decorators to add more functionality dynamically.
 
-![[Pasted image 20251224234513.png]]
+![](attachments/Pasted%20image%2020251225190332.png)
 ```
 // The Window interface class
 public interface Window {

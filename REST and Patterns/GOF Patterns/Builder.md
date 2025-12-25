@@ -11,8 +11,8 @@ To allow creation of complex product in small steps, allowing client to create d
 - Director is the class that calls these steps in a desired sequence to create representation of product.
     
 - To achieve this without the builder pattern, we’ll have to use either telescoping constructor which is confusing and not so good solution, or create a new subclass for the product representation that we want. That would lead to a large not so user friendly hierarchy of product classes.
-![[Pasted image 20251224234406.png]]
-![[Pasted image 20251224234415.png]]
+![](attachments/Pasted%20image%2020251225190150.png)
+![](attachments/Pasted%20image%2020251225190208.png)
 ```
 public interface Builder {
     void setCarType(CarType type);

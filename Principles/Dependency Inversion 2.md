@@ -14,8 +14,8 @@ Basically high level modules define **what to do,** while low level modules defi
 
 So before DIP, high level modules consume services of low level modules. Generally control flow goes from top to bottom as described in image below.
 
-![[Pasted image 20251225172131.png]]
-
+![](attachments/Pasted%20image%2020251225185849.png)
+![](attachments/Pasted%20image%2020251225185858.png)
 Now let’s see some issues with this approach.
 
 - Code reusability is hampered

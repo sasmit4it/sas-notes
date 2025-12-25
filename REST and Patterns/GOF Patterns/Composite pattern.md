@@ -4,7 +4,7 @@ When dealing with Tree-structured data, programmers often have to discriminate b
 
 Composite should be used when clients ignore the difference between compositions of objects and individual objects.[[1]](https://en.wikipedia.org/wiki/Composite_pattern#cite_note-GangOfFour-1 "https://en.wikipedia.org/wiki/Composite_pattern#cite_note-GangOfFour-1") If programmers find that they are using multiple objects in the same way, and often have nearly identical code to handle each of them, then composite is a good choice
 
-![[Pasted image 20251224234614.png]]
+![](attachments/Pasted%20image%2020251225190305.png)
 
 Both leaf and composite extend a common interface, but composite related operations are only available on composite and not on leaf.
 

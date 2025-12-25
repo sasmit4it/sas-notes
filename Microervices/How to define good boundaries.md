@@ -47,18 +47,18 @@ once main event is completed, function emits an event which can be subscribed by
 Here, two services share a common global resource. They are aware that the resource is shared. Since it is a shared resource, servieces can overload it with lot of traffice. Also data can be left in inconsistent state by one service, causing other service to fail completely. To mitigata this, both services have to maintain duplicate validation logic.
 
 
-![[Pasted image 20251225000709.png]]
+![](attachments/Pasted%20image%2020251225185633.png)
 
 
 
-![[Pasted image 20251225000720.png]]
+![](attachments/Pasted%20image%2020251225185640.png)
 
 
 Order table is shared, and each order goes through the state machine described above. It can happen that , orderprocessor changes order state to such a state that, it breaks the warehouse service ,or vice versa.
 
 This can be mitigated by using a wrapper service around the share table as follows.
 
-![[Pasted image 20251225000746.png]]
+![](attachments/Pasted%20image%2020251225185648.png)
 
 Now both processor and warehouse services ahve to go through order service. JOb of the order service is to maintain the state machine sequence for each order. if any request comes from either of client services, which violates the state, it will simply reject the request.
 
@@ -68,14 +68,14 @@ State maintanance logic is now stored at sigle place, and client servies are not
 
 This is same as common coupling, but only difference is resource is shared unintentionally. To fix this all you have to do is make each call to shared resource go through the service interface.
 
-![[Pasted image 20251225000800.png]]
+![](attachments/Pasted%20image%2020251225185656.png)
 
 **Pass through coupling**
 
 here 3 or more services are involved. First service produces and hands over the data to second service. Second service just passes that data to third service which is actual consumer of that data.
 
 
-![[Pasted image 20251225000817.png]]
+![](attachments/Pasted%20image%2020251225185704.png)
 
 This is dangerous, because any change in data consumption logic will affect all three services.
 

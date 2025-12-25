@@ -1,4 +1,4 @@
-![[Pasted image 20251225171204.png]]
+![](attachments/Pasted%20image%2020251225185953.png)
 
 _**A class should be open for extension but closed for modification.**_
 

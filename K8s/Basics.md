@@ -15,23 +15,23 @@ Kubernetes is container orcastration system. It takes care of
 
 Pod is the smallest unit in k8s world. Basic anatomy of a pod is as follows
 
-![[Pasted image 20251225172302.png]]
+![](attachments/Pasted%20image%2020251225185325.png)
 
 One pod can contain one or many docker containers. **Typically one pod contains one container,** but there is always possibility of adding more than one containers to a pod. All containers in a pod share storage volumes and netork IP address. One pod must have containers hosted on one server only. Y**ou cannot add containers from different servers to a single pod.**
 
 **k8s Clusters**
 
-![[Pasted image 20251225172316.png]]
+![](attachments/Pasted%20image%2020251225185337.png)
 
 K8s cluster contains nodes, which are basically servers. These servers can be located in different servers, data centers and geographic locations. Inside nodes , there are pods, inside pods, there are containers.
 
-![[Pasted image 20251225172331.png]]
+![](attachments/Pasted%20image%2020251225185347.png)
 
 once a cluster is formed, each cluster has master nodes and worker nodes. Master nodes typically do not run your work load, they just manage the cluster. Work load is run by workers.
 
 Service details of the clusters
 
-![[Pasted image 20251225172346.png]]
+![](attachments/Pasted%20image%2020251225185357.png)
 
 All the nodes, i.e. master ans worker run ffollowing services
 
@@ -79,15 +79,15 @@ docker ps
 
 now exit ssh, and try kubectl. here is few command to list namespaces and check k8s system namespace
 
-![[Pasted image 20251225172407.png]]
+![](attachments/Pasted%20image%2020251225185409.png)
 
 
-
+![](attachments/Pasted%20image%2020251225185435.png)
 
 
 For every pod created, k8s creates a pause container. This pause container is automatically created by k8s as a placeholder. Reference [here](https://sas-dev-notes.atlassian.net/wiki/pages/resumedraft.action?draftId=54460433&draftShareId=a80f8d90-ad86-4848-a0e8-7c11b227808a "https://sas-dev-notes.atlassian.net/wiki/pages/resumedraft.action?draftId=54460433&draftShareId=a80f8d90-ad86-4848-a0e8-7c11b227808a"). Pause container is not visible to kubectl. It can be accessed by docker ps or sudo ctr containers list. Containers in pod can close/recreate by pause container remains, as a placeholder for the pod.
 
-![[Pasted image 20251225172433.png]]
+![](attachments/Pasted%20image%2020251225185447.png)
 
 You can connect to nginx application running on the docker container from minicube virtual host or from the ngnix docker container itself. You cannot connect to this nginxx server from your local, because your local is not part of the minikude cluster and all the ips used are internal ones.
 
@@ -132,7 +132,7 @@ kubectl get svs //list services
 
 ```
 
-![[Pasted image 20251225172526.png]]
+![](attachments/Pasted%20image%2020251225185503.png)
 
 2. **node service**
     
@@ -144,17 +144,17 @@ kubectl expose deployment k8s-web-hello --type=NodePort --port=3000
 
 Service eposed will be of type NodePort.
 
-![[Pasted image 20251225172609.png]]
+![](attachments/Pasted%20image%2020251225185513.png)
 
 This nodePort will be accessible from your local as well. This basically binds application running on 3000 with MiniKube virtual host’s random port, 32346 in this case.
 
 Use following miniKube commmands to access this services from your local
 
-![[Pasted image 20251225172624.png]]
+![](attachments/Pasted%20image%2020251225185522.png)
 
 **Load balancers:**
 
-![[Pasted image 20251225172643.png]]
+![](attachments/Pasted%20image%2020251225185530.png)
 
 delete all resorces at once
 ```

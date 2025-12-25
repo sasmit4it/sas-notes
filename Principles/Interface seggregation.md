@@ -1,5 +1,5 @@
 
-![[Pasted image 20251225171701.png]]
+![](attachments/Pasted%20image%2020251225185915.png)
 
 Principle states:
 

@@ -11,7 +11,7 @@ Façade is used when there are different systems doing different thing in your s
 - implements a simple interface in terms of (by delegating to) the interfaces in the subsystem and
     
 - may perform additional functionality before/after forwarding a request.
-![[Pasted image 20251224234114.png]]
+![](attachments/Pasted%20image%2020251225190353.png)
 ```
 public interface Hotel
 {

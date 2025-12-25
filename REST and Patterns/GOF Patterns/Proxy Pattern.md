@@ -1,7 +1,7 @@
 1. Use proxy when you want to lazy instantiate a costly object. A lightweight proxy takes it’s place for time being. When you actually need the heavy object, proxy instantiates it and routes your calls to it.
     
 2. Use proxy when you want to add additional check before of after the object call. So before calling object, your call is routed via proxy which does the needed checks, and based on those checks it decides weather to call or not call original object.
-![[Pasted image 20251224233958.png]]
+![](attachments/Pasted%20image%2020251225190427.png)
 
 - [Adapter](https://refactoring.guru/design-patterns/adapter "https://refactoring.guru/design-patterns/adapter") provides a different interface to the wrapped object, [Proxy](https://refactoring.guru/design-patterns/proxy "https://refactoring.guru/design-patterns/proxy") provides it with the same interface, and [Decorator](https://refactoring.guru/design-patterns/decorator "https://refactoring.guru/design-patterns/decorator") provides it with an enhanced interface.
     

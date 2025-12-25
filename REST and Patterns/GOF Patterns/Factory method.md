@@ -5,7 +5,7 @@ Logic is kept at once place, reducing duplicity. but same logic can be applied t
 Achieves abstraction, since core logic is not aware of implementations, it only knows abstract product.
 
 Also achieves open close principle , since core logic need not change when a new type is to be supported. All you have to do is create a new subclass, and use it, while calling the core logic.
-![[Pasted image 20251224233616.png]]
+![](attachments/Pasted%20image%2020251225190409.png)
 
 As shown above, pattern has abstract product, abstract creator, and concrete products and concrete creators. Abstract creator holds AnOperation , which is a concrete operation , but it refers to creator factory method, which is abstract. This abstract method is realized by each of many concrete creators. So essentially, object creation is deferred to subclass, away from core logic in AnOperation.
 ```

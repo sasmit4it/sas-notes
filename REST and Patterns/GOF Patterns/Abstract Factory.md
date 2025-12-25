@@ -20,7 +20,7 @@
 Abstract factories generally describe the products in the top level interface itself. So if we want to add a product to it, we will have to modify the entire hierarchy.
 
 # Diagram
-![[Pasted image 20251224233219.png]]
+![](attachments/Pasted%20image%2020251225190058.png)
 In above figure, Widgetfactory is an abstract factory. Motif factory and PM widget factory are concrete factories. On the right side we have a similar product hierarchy for window and scroll bar.
 
 ```

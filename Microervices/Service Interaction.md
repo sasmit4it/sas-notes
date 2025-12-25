@@ -11,4 +11,4 @@ one to one messaging
 one to many messaging
 
 The following table shows the various interaction styles.
-![[Pasted image 20251225000304.png]]
+![](attachments/Pasted%20image%2020251225185754.png)

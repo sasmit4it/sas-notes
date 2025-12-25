@@ -1,12 +1,12 @@
 Used primarily when we have to define multi-dimensional classes. e.g. we have a shape interface having square and circle as concrete impls. Now if we want to introduce color property to these shapes, we will have to multiply the number of classes with new color values.
 
-![[Pasted image 20251224233736.png]]
+![](attachments/Pasted%20image%2020251225190113.png)
 To avoid explosion of classes in this scenario, we do as follows.
-![[Pasted image 20251224233754.png]]
+![](attachments/Pasted%20image%2020251225190123.png)
 
 new color property is composed inside the shape hierarchy. With this property we also introduce a setter to this property. This setter can be used to switch the color property at runtime.
 
-![[Pasted image 20251224233832.png]]
+![](attachments/Pasted%20image%2020251225190132.png)
 
 as described above, implementer is decoupled from abstraction. Implementer can be swapped at runtime.
 
