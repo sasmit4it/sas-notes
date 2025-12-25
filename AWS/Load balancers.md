@@ -76,6 +76,7 @@ _This is why you should create different security groups for LBs and instances.
 
 Listeners associate protocol:port combinations to set of targets.This is a ALB listeners configuration. Here HTTP:80 is routed to EC2 target group, and HTTP:8080 is configured to return fixed html response.
 ![[AWS/Pasted image 20251225183559.png]]
+
 Listeners can be configured on live ALBs.
 
 Security groups can be edited on live ALBs
@@ -114,7 +115,8 @@ one ALB can route traffic to multiple target groups. All you have to do is speci
 
 
 
-![[Pasted image 20251225001627.png]]
+![[AWS/Pasted image 20251225183943.png]]
+
 
 
 
