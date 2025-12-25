@@ -59,7 +59,7 @@ Application LB will require a target group configured. This target group will ha
 
 As per best practice, EC2 instances should be only accessible via LB. For that, we need to assign LB’s security group to each instances security group’s inbound rule as follows.
 
-![[Pasted image 20251225001245.png]]
+![[AWS/Pasted image 20251225183544.png]]
 
 Above rules are from Ec2 instances security group. 
 
@@ -75,7 +75,7 @@ _This is why you should create different security groups for LBs and instances.
 ### Listeners
 
 Listeners associate protocol:port combinations to set of targets.This is a ALB listeners configuration. Here HTTP:80 is routed to EC2 target group, and HTTP:8080 is configured to return fixed html response.
-![[Pasted image 20251225001608.png]]
+![[AWS/Pasted image 20251225183559.png]]
 Listeners can be configured on live ALBs.
 
 Security groups can be edited on live ALBs
