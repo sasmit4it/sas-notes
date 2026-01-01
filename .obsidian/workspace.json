@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JPA/Simple identifiers.md",
-                "mode": "source",
+                "file": "HTML CSS JS/HTML Basics.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Simple identifiers"
+              "title": "HTML Basics"
             }
           }
         ]
@@ -185,17 +185,23 @@
   },
   "active": "76c13a20b9360968",
   "lastOpenFiles": [
+    "HTML CSS JS/attachments/Screenshot from 2026-01-01 15-42-03.png",
+    "JPA/Basics.md",
+    "JPA/Inheritance mapping.md",
     "JPA/Composite identifier.md",
-    "JPA/Simple identifiers.md",
+    "HTML CSS JS/HTML Basics.md",
+    "HTML CSS JS/attachments/Screenshot from 2026-01-01 15-37-20.png",
     "JPA/Many to one - One to many.md",
+    "HTML CSS JS/attachments/Pasted image 20260101153521.png",
+    "HTML CSS JS/attachments",
+    "JPA/Simple identifiers.md",
+    "HTML CSS JS",
     "JPA/attachments/Pasted image 20251225192403.png",
     "JPA/attachments/Pasted image 20251225192302.png",
     "JPA/One to one.md",
     "JPA/attachments/Pasted image 20251225192200.png",
     "JPA/attachments/Pasted image 20251225191940.png",
-    "JPA/Inheritance mapping.md",
     "JPA/Imp annotations.md",
-    "JPA/Basics.md",
     "JPA/attachments/Pasted image 20251225191452.png",
     "JPA/attachments",
     "Pasted image 20251225191303.png",
