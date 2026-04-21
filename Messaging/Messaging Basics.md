@@ -4,6 +4,7 @@ messaging includes 5 basic steps:
 3. Deliver
 4. Receive
 5. Process
+
 ![](attachments/Pasted%20image%2020260421235722.png)
 
 These steps can repeat multiple times through intermediate hosts until final receiver host is reached.
