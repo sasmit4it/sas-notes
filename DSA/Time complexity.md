@@ -261,7 +261,6 @@ For every level we're doubling the number of nodes, and that happens N times.
 
 -------------------------------------------------------
 
-## O(N!) Time and Space Complexity
 
 ## O(N!) Time and Space Complexity
 
