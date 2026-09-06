@@ -34,6 +34,7 @@ which roughly equals to N. So for two branches it will 2N which becomes O(N).
 
 ```
 public static void mergeSort(int[] a, int n) {
+		//n is basiaclly array length for that iteration
     if (n < 2) {
         return;
     }
@@ -47,10 +48,10 @@ public static void mergeSort(int[] a, int n) {
     for (int i = mid; i < n; i++) {
         r[i - mid] = a[i];
     }
-    mergeSort(l, mid);
-    mergeSort(r, n - mid);
+    mergeSort(l, mid); //mid is length of left array
+    mergeSort(r, n - mid); //n-mid is remaining length i.e. right array length
 
-    merge(a, l, r, mid, n - mid);
+    merge(a, l, r, mid, n - mid); //same length is passed down to merge for tracking and moving data to destination
 }
 
 public static void merge(
